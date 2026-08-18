@@ -1,0 +1,5 @@
+ReferenceID,MaskFile,ImageRows,ImageCols,RowStart,RowEnd,ColStart,ColEnd,ROIRows,ROICols,ROIPixels
+kidney_esaote,kidney_esaote_roi_mask.png,841,841,408,617,363,691,210,329,69090
+thigh_esaote,thigh_esaote_roi_mask.png,840,840,316,562,156,517,247,362,89414
+kidney_telemed,kidney_telemed_roi_mask.png,931,931,373,643,423,773,271,351,95121
+thigh_telemed,thigh_telemed_roi_mask.png,930,930,330,579,280,625,250,346,86500

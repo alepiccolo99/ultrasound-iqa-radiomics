@@ -27,6 +27,12 @@ ultrasound-iqa-radiomics/
 │   │   ├── paper_modeling_data.mat
 │   │   ├── reference_radiomic_features.csv
 │   │   ├── roi_coordinates.csv
+│   │   ├── roi_masks/
+│   │   │   ├── kidney_esaote_roi_mask.png
+│   │   │   ├── kidney_telemed_roi_mask.png
+│   │   │   ├── thigh_esaote_roi_mask.png
+│   │   │   ├── thigh_telemed_roi_mask.png
+│   │   │   └── roi_mask_metadata.csv
 │   │   ├── sample_metadata.csv
 │   │   ├── subjective_scores.csv
 │   │   └── test_radiomic_features.csv
@@ -286,6 +292,7 @@ The public derived study data include:
 
 - sample-level metadata for all 192 test images;
 - exact rectangular ROI coordinates for the four reference groups;
+- full-resolution binary ROI masks and ROI-mask metadata for the four reference groups;
 - observer-level pair-mean subjective scores and final subjective targets;
 - per-reference and per-test radiomic feature tables;
 - exact derived modeling inputs;
@@ -297,7 +304,7 @@ The public derived study data include:
 
 The original ultrasound images used in the study are **not distributed in this repository**.
 
-The repository therefore provides the code, derived numerical data, ROI coordinates, grouping information, subjective targets, split assignments, seeds, and model configuration needed to reproduce the principal radiomics/modeling analysis without redistributing the original images.
+The repository therefore provides the code, derived numerical data, ROI coordinates, full-resolution binary ROI masks, grouping information, subjective targets, split assignments, seeds, and model configuration needed to reproduce the principal radiomics/modeling analysis without redistributing the original images.
 
 The reusable MATLAB workflow is provided so that the same extraction and grouped model-development structure can be applied to user-supplied images.
 
