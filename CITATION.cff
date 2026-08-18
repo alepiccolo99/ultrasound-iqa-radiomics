@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated research article and this repository."
+title: "Ultrasound IQA Radiomics"
+type: software
+authors:
+  - family-names: "Piccolo"
+    given-names: "Alessandro"
+    email: "alessandro.piccolo@santannapisa.it"
+    affiliation: "The BioRobotics Institute, Scuola Superiore Sant'Anna"
+  - family-names: "Papapicco"
+    given-names: "Vito"
+    email: "vito.papapicco@soundsafecare.com"
+    affiliation: "Soundsafe Care Srl"
+  - family-names: "Mariani"
+    given-names: "Andrea"
+    email: "andrea.mariani@soundsafecare.com"
+    affiliation: "Soundsafe Care Srl"
+  - family-names: "Menciassi"
+    given-names: "Arianna"
+    email: "arianna.menciassi@santannapisa.it"
+    affiliation: "Scuola Superiore Sant'Anna"
+  - family-names: "Cafarelli"
+    given-names: "Andrea"
+    email: "andrea.cafarelli@santannapisa.it"
+    affiliation: "Scuola Superiore Sant'Anna"
+license: "BSD-3-Clause"
+keywords:
+  - "ultrasound"
+  - "image quality assessment"
+  - "radiomics"
+  - "machine learning"
+  - "full-reference IQA"
+  - "reproducibility"
+abstract: >-
+  Software and derived analysis workflow for full-reference ultrasound image
+  quality assessment using radiomic representations and reference-grouped
+  nested model development. The repository supports exact reproduction of the
+  paper modeling results from released derived inputs and reuse of the same
+  workflow with user-supplied ultrasound images and subjective targets.
+references:
+  - type: article
+    title: "A Radiomics-Based Machine Learning Framework for Full-Reference Ultrasound Image Quality Assessment Across Varying Acquisition Settings"
+    authors:
+      - family-names: "Piccolo"
+        given-names: "Alessandro"
+      - family-names: "Papapicco"
+        given-names: "Vito"
+      - family-names: "Mariani"
+        given-names: "Andrea"
+      - family-names: "Menciassi"
+        given-names: "Arianna"
+      - family-names: "Cafarelli"
+        given-names: "Andrea"
+    year: 2026

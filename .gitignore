@@ -1,0 +1,37 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Generated analysis outputs
+results/
+
+# Local editor / IDE files
+.vscode/
+.idea/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# MATLAB temporary / autosave files
+*.asv
+*.m~
+
+# User-supplied data must remain local
+data/user_input/*
+!data/user_input/dataset_manifest_template.csv
+!data/user_input/roi_coordinates_template.csv
+!data/user_input/subjective_scores_template.csv
+!data/user_input/reference_images/
+!data/user_input/test_images/
+
+data/user_input/reference_images/*
+!data/user_input/reference_images/README.md
+
+data/user_input/test_images/*
+!data/user_input/test_images/README.md

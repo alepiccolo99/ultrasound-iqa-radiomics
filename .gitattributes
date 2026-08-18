@@ -1,0 +1,5 @@
+# Normalize text files across operating systems
+* text=auto eol=lf
+
+# Binary scientific data
+*.mat binary

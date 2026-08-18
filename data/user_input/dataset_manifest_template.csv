@@ -1,0 +1,5 @@
+SampleID,ReferenceID,ReferenceFile,TestFile
+sample_001,reference_1,ref_1.png,test_001.png
+sample_002,reference_1,ref_1.png,test_002.png
+sample_003,reference_2,ref_2.png,test_003.png
+sample_004,reference_2,ref_2.png,test_004.png

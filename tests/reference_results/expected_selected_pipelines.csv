@@ -1,0 +1,5 @@
+OuterFold,HeldOutReferenceID,Representation,LassoAlpha,ModelFamily,ModelParamsJSON,SelectedFeatureCount,InnerRMSE,InnerMAE,InnerR2
+1,kidney_esaote,absoluteDelta,0.03,Ridge,"{""alpha"":100}",11,0.10232556673183536,0.0832941764070781,0.8716774950408813
+2,kidney_telemed,normalizedDelta,0.1,RBF_SVR,"{""C"":1,""gamma"":0.01}",3,0.08853290860962984,0.07010748226954099,0.8845250936219782
+3,thigh_esaote,absoluteDelta,0.01,Ridge,"{""alpha"":10}",16,0.09630241624212077,0.07344382494678953,0.8770111924610383
+4,thigh_telemed,stableLogRatio,0.1,RBF_SVR,"{""C"":100,""gamma"":0.1}",4,0.0893104318438972,0.07114504031288293,0.8988046111513952

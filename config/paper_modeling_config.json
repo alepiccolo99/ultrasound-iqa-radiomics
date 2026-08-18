@@ -1,0 +1,108 @@
+{
+  "master_seed": 20250111,
+  "validation": {
+    "outer": "leave-one-reference-group-out",
+    "inner": "leave-one-training-reference-group-out",
+    "grouping_unit": "reference group"
+  },
+  "representations": [
+    "signedDelta",
+    "absoluteDelta",
+    "normalizedDelta",
+    "stableLogRatio",
+    "jointRefTest",
+    "jointRefTestDelta"
+  ],
+  "preprocessing": {
+    "zero_variance_filter": true,
+    "standardization": "training-fold mean and population standard deviation",
+    "spearman_redundancy_threshold": 0.9
+  },
+  "lasso": {
+    "alphas": [
+      0.0001,
+      0.0003,
+      0.001,
+      0.003,
+      0.01,
+      0.03,
+      0.1,
+      0.3
+    ],
+    "fit_intercept": true,
+    "max_iter": 100000,
+    "tol": 1e-07,
+    "selection": "cyclic"
+  },
+  "regression_models": {
+    "MLR": {},
+    "Ridge": {
+      "alpha": [
+        0.001,
+        0.01,
+        0.1,
+        1,
+        10,
+        100,
+        1000
+      ]
+    },
+    "DecisionTree": {
+      "max_depth": [
+        3,
+        5,
+        10
+      ],
+      "min_samples_split": [
+        5,
+        10
+      ],
+      "min_samples_leaf": [
+        1,
+        5
+      ]
+    },
+    "GradientBoosting": {
+      "n_estimators": [
+        100,
+        250
+      ],
+      "learning_rate": [
+        0.05,
+        0.1,
+        0.2
+      ],
+      "max_depth": [
+        2,
+        3
+      ]
+    },
+    "RBF_SVR": {
+      "C": [
+        1,
+        10,
+        100
+      ],
+      "gamma": [
+        0.01,
+        0.1,
+        1,
+        10
+      ]
+    }
+  },
+  "candidate_counts": {
+    "representations": 6,
+    "lasso_values": 8,
+    "regression_configurations": 44,
+    "pipelines_per_outer_fold": 2112
+  },
+  "selection_order": [
+    "lowest inner RMSE",
+    "lowest inner MAE",
+    "highest inner R2",
+    "deterministic candidate order"
+  ],
+  "paper_reproduction_input": "data/paper/paper_modeling_data.mat",
+  "paper_outer_fold_assignments": "data/paper/outer_fold_assignments.csv"
+}
